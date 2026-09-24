@@ -46,13 +46,6 @@ a { color: var(--brand-black); text-decoration-color: var(--brand-red); text-dec
 a:hover { color: var(--brand-red); }
 :focus-visible { outline: 3px solid var(--brand-black); outline-offset: 3px; border-radius: 4px; }
 
-.placeholder-text {
-  background: #fff4cc;
-  color: #5a4500;
-  padding: 0 .25em;
-  border-radius: 3px;
-  font-weight: 700;
-}
 
 /* ---------- Skip link ---------- */
 .skip-link {
@@ -172,9 +165,6 @@ a:hover { color: var(--brand-red); }
   border: solid #fff; border-width: 0 3px 3px 0; transform: rotate(45deg);
 }
 
-/* ---------- Photo placeholders ---------- */
-.photo { margin: 0; }
-.photo img { width: 100%; height: auto; border-radius: var(--radius); background: #e2e2e2; }
 
 /* ---------- Callout / contact ---------- */
 .callout {
@@ -214,3 +204,8 @@ a:hover { color: var(--brand-red); }
 .visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .logo-404 { width: 220px; height: auto; margin: 0 auto 1.5rem; }
 @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+.split--top { align-items: start; }
+.btn-row--center { justify-content: center; }
+.card h2 { font-size: 1.5rem; }
+a[href^="tel:"]:not(.btn) { white-space: nowrap; }
+@media (min-width: 1000px) { .grid--4 .trust-item { flex-direction: column; } }
